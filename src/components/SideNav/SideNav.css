@@ -1,0 +1,113 @@
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  padding-top: 20px;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav ul li {
+  padding: 15px;
+}
+
+.sidenav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: cursive, sans-serif;
+}
+
+.sidenav ul li a:hover {
+  color: #009CC3;
+  text-shadow: 0 0 10px #fff;
+  font-size: 16px;
+  font-family: cursive, sans-serif;
+}
+
+.group-heading {
+  color: #ff7300;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #ccc;
+  border-top: 3px solid #ccc;
+  cursor: pointer;
+}
+
+.table-heading {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.table-heading th {
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.table-heading th:first-child {
+  border-right: 1px solid #fff;
+}
+
+.table-heading th:hover {
+  font-size: 16px;
+  color: #009CC3;
+  text-shadow: 0 0 10px #fff;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.table-heading {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00466C;
+}
+
+
+.table-heading-default {
+  display: flex;
+  justify-content: center;
+}
+
+.table-heading-default th {
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.table-heading-default th:hover {
+  font-size: 16px;
+  color: #009CC3;
+  text-shadow: 0 0 10px #fff;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+

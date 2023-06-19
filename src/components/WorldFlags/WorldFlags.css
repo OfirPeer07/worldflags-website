@@ -1,0 +1,132 @@
+.app-container {
+  /* Styles for the main container */
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-content {
+  /* Styles for the main content area */
+  padding: 30px;
+  margin-left: 250px;
+  color: #ff7300;
+}
+
+.title {
+  /* Styles for the title */
+  font-size: 5vmin;
+  font-weight: 600;
+  font-family: cursive, sans-serif;
+  color: #00466C;
+  text-align: center;
+  cursor: pointer;
+  text-shadow: 0 0 20px #fff;
+  transition: font-weight 250ms ease-in-out, text-shadow 250ms ease-in-out;
+}
+
+.title:hover {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #009CC3;
+}
+
+.subtitle {
+  /* Styles for the subtitle */
+  font-size: 3vmin;
+  font-weight: 600;
+  font-family: cursive, sans-serif;
+  color: #00466C;
+  text-align: center;
+  text-shadow: 0 0 20px #fff;
+  cursor: pointer;
+  transition: font-weight 250ms ease-in-out;
+}
+
+.subtitle:hover {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #009CC3;
+}
+
+.image-feed {
+  /* Styles for the image feed */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.flag-container {
+  /* Styles for the flag container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flag-image {
+  /* Styles for the flag image */
+  width: 305px;
+  height: 235px;
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: contrast(0.8);
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+.flag-image:hover {
+  /* Styles for the flag image on hover */
+  --_i: 10%;
+  filter: grayscale(0);
+}
+
+.flag-name {
+  /* Styles for the flag name */
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive, sans-serif;
+  color: #00466C;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px #fff;
+  transition: margin-left 5s ease-in-out, width 5s ease-in-out;
+}
+
+.flag-name {
+  /* Styles for the flag name */
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive, sans-serif;
+  color: #009CC3;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px #fff;
+  animation: textAnimation 3s infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

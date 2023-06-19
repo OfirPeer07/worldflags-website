@@ -1,0 +1,63 @@
+.page-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background: black url('../../images/backgrounds/background.jpg');
+  animation: stars 180s linear 0s infinite;
+  background-size: auto;
+}
+
+#moon {
+  background: url('../../images/backgrounds/moon.jpg');
+  background-size: cover;
+  border: 2px solid #000;
+  border-radius: 50%;
+  right: 45%;
+  width: 750px;
+  height: 750px;
+  cursor: pointer;
+  animation: movimiento 120s linear 0s infinite;
+  margin: 6em auto;
+  transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset, 2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset, 25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 180px 0;
+  }
+}
+
+@keyframes stars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.astronaut {
+  position: fixed;
+  top: 100%;
+  left: 45%;
+  transform: translate(-100%, -100%);
+  width: 550px;
+  height: 550px;
+  background-image: url('../../images/backgrounds/astronaut.png');
+  background-size: cover;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.astronaut:hover {
+}

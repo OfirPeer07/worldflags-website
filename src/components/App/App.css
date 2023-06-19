@@ -1,0 +1,67 @@
+body {
+  background: black url(../../images/backgrounds/background.jpg);
+  animation: stars 180s linear alternate;
+  background-size: fixed;
+}
+
+#box {
+  background: url(../../images/backgrounds/map.png);
+  background-size: cover;
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+  animation: movimiento 120s linear 0s infinite;
+  margin: 6em auto;
+  transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset,
+    2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset,
+    25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
+}
+
+#box:hover::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  animation: glow 60s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 356px 0;
+  }
+}
+
+@keyframes stars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+

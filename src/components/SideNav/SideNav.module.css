@@ -1,0 +1,21 @@
+.sidenav {
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 20px;
+}
+
+.navLink {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.navLink:hover {
+  color: #ff4081;
+  font-weight: bold;
+}
+
+/* Additional styles for your SideNav */
+
