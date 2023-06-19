@@ -59,5 +59,13 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.astronaut:hover {
+.text {
+  font-size: 35px;
+  font-family: sans-serif;
+  color: #fff;
+  position: fixed;
+  right: 75%;
+  top: 45%;
+  left: 26%;
+  transform: translate(-100%, -100%);
 }

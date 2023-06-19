@@ -6,7 +6,9 @@ const PageNotFound = () => {
     <div className="page-not-found-container">
       <div id="moon"></div>
       <div className="astronaut"></div>
-      <div className="funny-text"></div>
+      <div className="text">
+        <span>Houston We Have 404 Problem</span> 
+      </div>
     </div>
   );
 };
