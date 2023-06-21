@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-//import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import '../WorldFlags/WorldFlags.css';
 import flagNames from '../../data/flagNames';
 import sortedFlagNamesPopulation from '../../data/flagNamesPopulation';
 import sortedFlagNamesLandArea from '../../data/flagNamesLandArea';
 import sortedFlagNamesDefault from '../../data/flagNamesDefault';
 import SideNav from '../SideNav/SideNav';
-//import NotFoundPage from '../../NotFoundPage/NotFoundPage';
 
 function WorldFlags() {
   const [sortedFlagsByPopulation, setSortedFlagsByPopulation] = useState(sortedFlagNamesPopulation);
