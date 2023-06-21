@@ -15,10 +15,9 @@
 
 .title {
   /* Styles for the title */
-  font-size: 5vmin;
-  font-weight: 600;
-  font-family: cursive, sans-serif;
-  color: #00466C;
+  font-size: 4vmin;
+  font-family: 'Wallpoet', cursive;
+  color: #ff7300;
   text-align: center;
   cursor: pointer;
   text-shadow: 0 0 20px #fff;
@@ -26,19 +25,21 @@
 }
 
 .title:hover {
+  font-size: 5vmin;
   font-weight: 900;
   text-transform: uppercase;
   color: #009CC3;
+  text-shadow: 0 0 20px #ff7300;
 }
 
 .subtitle {
   /* Styles for the subtitle */
   font-size: 3vmin;
   font-weight: 600;
-  font-family: cursive, sans-serif;
-  color: #00466C;
+  font-family: 'Wallpoet', cursive;
+  color: #009CC3;
   text-align: center;
-  text-shadow: 0 0 20px #fff;
+  text-shadow: 0 0 20px #ff7300;
   cursor: pointer;
   transition: font-weight 250ms ease-in-out;
 }
@@ -46,7 +47,8 @@
 .subtitle:hover {
   font-weight: 900;
   text-transform: uppercase;
-  color: #009CC3;
+  color: #ff7300;
+  text-shadow: 0 0 20px #009CC3;
 }
 
 .image-feed {

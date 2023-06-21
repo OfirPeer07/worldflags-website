@@ -4,10 +4,10 @@ import './PageNotFound.css';
 const PageNotFound = () => {
   return (
     <div className="page-not-found-container">
-      <div id="moon"></div>
+      <a id="moon" href="/">/</a>
       <div className="astronaut"></div>
       <div className="text">
-        <span>Houston We Have 404 Problem</span> 
+        <span class="flicker">Houston We <span class="Have_a">Have a</span> <span className="blink _404">404</span> <span class="flickerProblem">Problem</span></span>
       </div>
     </div>
   );

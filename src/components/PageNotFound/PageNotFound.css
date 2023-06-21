@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
 .page-not-found-container {
   display: flex;
   justify-content: center;
@@ -20,7 +22,7 @@ body {
   width: 750px;
   height: 750px;
   cursor: pointer;
-  animation: movimiento 120s linear 0s infinite;
+  animation: movimiento 240s linear 0s infinite;
   margin: 6em auto;
   transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
   position: relative;
@@ -60,12 +62,202 @@ body {
 }
 
 .text {
-  font-size: 35px;
-  font-family: sans-serif;
-  color: #fff;
+  font-size: 65px;
+  font-family: "Wallpoet", cursive;
+  color: #17ca07;
   position: fixed;
   right: 75%;
   top: 45%;
   left: 26%;
   transform: translate(-100%, -100%);
+  background: linear-gradient(180deg, #000000, #000000);
+}
+
+._404 {
+  font-size: 140px;
+  font-weight: bold;
+}
+
+.Have_a {
+  white-space: nowrap;
+}
+
+.blink {
+  animation: blink 0.3s infinite;
+}
+
+.flicker {
+  opacity: 0.8;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #000, 0 0 15px #15ff00, 0 0 50px #15ff00;
+  -webkit-animation: flicker 3s infinite alternate;
+  -moz-animation: flicker 3s infinite alternate;
+  -o-animation: flicker 3s infinite alternate;
+  animation: flicker 3s infinite alternate;
+}
+
+.flickerProblem {
+  opacity: 0.8;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #000, 0 0 15px #15ff00, 0 0 50px #15ff00;
+  -webkit-animation: flicker 5s infinite alternate;
+  -moz-animation: flicker 5s infinite alternate;
+  -o-animation: flicker 5s infinite alternate;
+  animation: flicker 5s infinite alternate;
+}
+
+@-moz-keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes blink {
+  45% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes flicker {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes flicker {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes flicker {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes flicker {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+
+@-moz-keyframes flickerProblem {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes flickerProblem {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes flickerProblem {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes flickerProblem {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
 }

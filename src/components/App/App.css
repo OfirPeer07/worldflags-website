@@ -4,22 +4,42 @@ body {
   background-size: fixed;
 }
 
+@keyframes stars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
 #box {
-  background: url(../../images/backgrounds/map.png);
+  background: url(../../images/backgrounds/earth.png);
   background-size: cover;
-  border: 2px solid #000;
-  border-radius: 50%;
-  width: 500px;
-  height: 500px;
+  background-position: center;
+  background-attachment: fixed;
+  border: 1px solid #000000;
+  border-radius: 100%;
+  width: 650px;
+  height: 650px;
   cursor: pointer;
-  animation: movimiento 120s linear 0s infinite;
+  animation: movimiento 240s linear infinite;
   margin: 6em auto;
   transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
-  position: relative;
+  position: sticky;
   overflow: hidden;
   box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset,
     2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset,
     25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 #box:hover::before {
@@ -33,35 +53,123 @@ body {
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 70%
+    rgba(255, 255, 255, 0) 50%
   );
-  animation: glow 60s linear infinite;
+  animation: orbit 10s linear infinite;
 }
 
-@keyframes glow {
+@keyframes orbit {
   0% {
-    transform: translateX(-50%);
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
   }
   100% {
-    transform: translateX(50%);
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
   }
 }
 
-@keyframes movimiento {
-  0% {
-    background-position: 0 0;
+.jt {
+  position: absolute;
+  font-size: 65px;
+  top: 73%;
+  right: 30%;
+  left: 30%;
+  font-family: "Wallpoet", cursive;
+  
+  font-display: swap;
+  text-shadow: 0 0 10px #17ca07;
+}
+
+.jt:hover {
+  text-transform: uppercase;
+  font-size: 55px;
+  top: 74%;
+  right: 30%;
+  left: 30%;
+ 
+}
+
+.jt__row {
+  display: block;
+}
+.jt__row:nth-child(1) {
+  clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+}
+.jt__row:nth-child(2) {
+  clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+}
+.jt__row:nth-child(3) {
+  clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+}
+.jt__row:nth-child(4) {
+  clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+}
+
+.jt__row.jt__row--sibling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+.jt__text {
+  display: block;
+  transform-origin: bottom left;
+  animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+}
+.jt__row:nth-child(1) .jt__text {
+  transform: translateY(-0.1em);
+}
+.jt__row:nth-child(2) .jt__text {
+  transform: translateY(-0.3em) scaleY(1.1);
+}
+.jt__row:nth-child(3) .jt__text {
+  transform: translateY(-0.5em) scaleY(1.2) ;
+}
+.jt__row:nth-child(4) .jt__text {
+  transform: translateY(-0.7em) scaleY(1.3) ;
+}
+.jt__row:nth-child(5) .jt__text {
+  transform: translateY(-0.9em) scaleY(1.4) ;
+}
+.jt__row:nth-child(6) .jt__text {
+  transform: translateY(-1.1em) scaleY(1.5) ;
+}
+
+@keyframes moveIn {
+  50%, 100% { 
+    transform: translateY(0em)
   }
-  100% {
-    background-position: 356px 0;
+  0%   { 
+  opacity: 0; 
+  filter: blur(10px);
+  
+  }
+  100% { 
+  opacity: 1; 
+  filter: blur(0px);
   }
 }
 
-@keyframes stars {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 0 100%;
-  }
+.debug .jt__row:nth-child(even) {
+  color: black;
+  background: white;
+}
+.debug .jt__row:nth-child(odd) {
+  color: white;
+  background: black;
 }
 
+* { box-sizing: border-box }
+
+html, bodyApp {
+  margin: 0;
+  background: black;
+  color: #17ca07;
+  height: 100%;
+}
+
+bodyApp {
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
