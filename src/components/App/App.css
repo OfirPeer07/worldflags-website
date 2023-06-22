@@ -2,6 +2,8 @@ body {
   background: black url(../../images/backgrounds/background.jpg);
   animation: stars 180s linear alternate;
   background-size: fixed;
+  position: sticky;
+  overflow: hidden;
 }
 
 @keyframes stars {
@@ -13,7 +15,7 @@ body {
   }
 }
 
-#box {
+#earth {
   background: url(../../images/backgrounds/earth.png);
   background-size: cover;
   background-position: center;
@@ -23,7 +25,7 @@ body {
   width: 650px;
   height: 650px;
   cursor: pointer;
-  animation: movimiento 240s linear infinite;
+  animation: movimiento 120s linear infinite;
   margin: 6em auto;
   transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
   position: sticky;
@@ -33,48 +35,138 @@ body {
     25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
 }
 
-@keyframes movimiento {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-
-#box:hover::before {
+#earth::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 50%
-  );
-  animation: orbit 10s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 645px;
+  height: 645px;
+  border: 5px solid #00ff56;
+  border-radius: 100%;
+  animation: loading 120s linear infinite;
 }
 
 @keyframes orbit {
   0% {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-200px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(360deg) translateY(-200px) rotate(-360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    clip-path: polygon(
+      0% 100%,
+      0% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      100% 50%,
+      100% 100%
+    );
+  }
+  12.5% {
+    clip-path: polygon(
+      0% 100%,
+      0% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      100% 100%,
+      100% 100%
+    );
+  }
+  25% {
+    clip-path: polygon(
+      0% 100%,
+      0% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      50% 100%,
+      50% 100%
+    );
+  }
+  37.5% {
+    clip-path: polygon(
+      0% 100%,
+      0% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      0% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 50%,
+      0% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      0% 50%,
+      0% 50%
+    );
+  }
+  62.5% {
+    clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 50%, 50% 50%, 0% 0%, 0% 0%);
+  }
+  75% {
+    clip-path: polygon(
+      50% 0%,
+      50% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      50% 0%,
+      50% 0%
+    );
+  }
+  87.5% {
+    clip-path: polygon(
+      100% 0%,
+      100% 0%,
+      100% 0%,
+      100% 50%,
+      50% 50%,
+      100% 0%,
+      100% 0%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      100% 50%,
+      100% 50%,
+      100% 50%,
+      100% 50%,
+      50% 50%,
+      100% 50%,
+      100% 50%
+    );
+  }
+}
+
+@keyframes movimiento {
+  from {
+    transform: rotateZ(6deg);
+  }
+  to {
+    transform: rotateZ(366deg);
   }
 }
 
 .jt {
   position: absolute;
   font-size: 65px;
-  top: 73%;
+  top: 75%;
   right: 30%;
   left: 30%;
   font-family: "Wallpoet", cursive;
-  
   font-display: swap;
   text-shadow: 0 0 10px #17ca07;
 }
@@ -82,10 +174,9 @@ body {
 .jt:hover {
   text-transform: uppercase;
   font-size: 55px;
-  top: 74%;
+  top: 77%;
   right: 30%;
   left: 30%;
- 
 }
 
 .jt__row {
@@ -113,7 +204,7 @@ body {
 .jt__text {
   display: block;
   transform-origin: bottom left;
-  animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+  animation: moveIn 0.5ms 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
 }
 .jt__row:nth-child(1) .jt__text {
   transform: translateY(-0.1em);
@@ -160,14 +251,14 @@ body {
 
 * { box-sizing: border-box }
 
-html, bodyApp {
+html, body {
   margin: 0;
   background: black;
   color: #17ca07;
   height: 100%;
 }
 
-bodyApp {
+body {
   display: absolute;
   align-items: center;
   justify-content: center;

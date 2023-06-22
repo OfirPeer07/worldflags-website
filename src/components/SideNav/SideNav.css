@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
 .sidenav {
-  width: 250px;
-  height: 100vh;
+  width: 285px;
+  height: 150vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   background: #333;
   padding-top: 20px;
   overflow-y: auto;
@@ -22,25 +24,26 @@
 .sidenav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
-  font-family: cursive, sans-serif;
+  font-size: 19px;
+  font-family: 'Wallpoet', sans-serif;
 }
 
 .sidenav ul li a:hover {
   color: #009CC3;
   text-shadow: 0 0 10px #fff;
-  font-size: 16px;
-  font-family: cursive, sans-serif;
+  font-size: 22px;
+  font-family: 'Wallpoet', sans-serif;
 }
 
 .group-heading {
   color: #ff7300;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bold;
+  font-family: 'Wallpoet', sans-serif;
   padding-top: 10px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #ccc;
-  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
   cursor: pointer;
 }
 
@@ -53,9 +56,10 @@
 
 .table-heading th {
   text-align: center;
+  font-family: 'Wallpoet', sans-serif;
   padding: 5px;
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -64,7 +68,7 @@
 }
 
 .table-heading th:hover {
-  font-size: 16px;
+  font-size: 18px;
   color: #009CC3;
   text-shadow: 0 0 10px #fff;
 }
@@ -78,7 +82,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  color: #00466C;
+  color: #009CC3;
 }
 
 
@@ -91,7 +95,8 @@
   text-align: center;
   padding: 5px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: 'Wallpoet', sans-serif;
   font-weight: bold;
   width: 100%;
   display: flex;
@@ -101,7 +106,7 @@
 }
 
 .table-heading-default th:hover {
-  font-size: 16px;
+  font-size: 18px;
   color: #009CC3;
   text-shadow: 0 0 10px #fff;
 }

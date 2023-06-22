@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
 .app-container {
-  /* Styles for the main container */
   display: flex;
   flex-direction: row;
   background-size: cover;
@@ -7,16 +8,14 @@
 }
 
 .main-content {
-  /* Styles for the main content area */
   padding: 30px;
   margin-left: 250px;
   color: #ff7300;
 }
 
 .title {
-  /* Styles for the title */
   font-size: 4vmin;
-  font-family: 'Wallpoet', cursive;
+  font-family: 'Wallpoet', sans-serif;
   color: #ff7300;
   text-align: center;
   cursor: pointer;
@@ -33,10 +32,9 @@
 }
 
 .subtitle {
-  /* Styles for the subtitle */
   font-size: 3vmin;
   font-weight: 600;
-  font-family: 'Wallpoet', cursive;
+  font-family: 'Wallpoet', sans-serif;
   color: #009CC3;
   text-align: center;
   text-shadow: 0 0 20px #ff7300;
@@ -52,7 +50,6 @@
 }
 
 .image-feed {
-  /* Styles for the image feed */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,14 +58,12 @@
 }
 
 .flag-container {
-  /* Styles for the flag container */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .flag-image {
-  /* Styles for the flag image */
   width: 305px;
   height: 235px;
   --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
@@ -85,31 +80,16 @@
 }
 
 .flag-image:hover {
-  /* Styles for the flag image on hover */
   --_i: 10%;
   filter: grayscale(0);
 }
 
 .flag-name {
-  /* Styles for the flag name */
   text-align: center;
   margin-top: 10px;
   font-size: 25px;
   font-weight: bold;
-  font-family: cursive, sans-serif;
-  color: #00466C;
-  letter-spacing: 1px;
-  text-shadow: 0 0 20px #fff;
-  transition: margin-left 5s ease-in-out, width 5s ease-in-out;
-}
-
-.flag-name {
-  /* Styles for the flag name */
-  text-align: center;
-  margin-top: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: cursive, sans-serif;
+  font-family: 'Wallpoet', sans-serif;
   color: #009CC3;
   letter-spacing: 1px;
   text-shadow: 0 0 20px #fff;

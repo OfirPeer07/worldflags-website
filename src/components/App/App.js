@@ -8,7 +8,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <div id="box" onClick={handleClick}></div>
+      <div id="earth" onClick={handleClick} className="xbox">
+        <div class="xbox" data-char="O"></div>
+      </div>
       <h1 class="jt --debug">
         <span class="jt__row">
           <span class="jt__text">Welcome To The World Flags Website</span>

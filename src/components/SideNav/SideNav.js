@@ -16,15 +16,15 @@ function SideNav({ sortedFlagsByPopulation, sortedFlagsByLandArea, sortedFlagsBy
             </a>
           </div>
         </li>
-        <li className="group-heading">Real-Time of All Information:</li>
+        <li className="group-heading">Real-Time Information:</li>
         <li>
           <a href="https://www.worldometers.info/" target="_blank" rel="noopener noreferrer">
-            Real-Time World information
+            World information
           </a>
         </li>
         <li>
           <a href="https://www.worldometers.info/world-population/" target="_blank" rel="noopener noreferrer">
-            Real-Time World Population
+            World Population
           </a>
         </li>
         <li>
@@ -40,22 +40,22 @@ function SideNav({ sortedFlagsByPopulation, sortedFlagsByLandArea, sortedFlagsBy
         <li className="group-heading">Worldometers Details:</li>
         <li>
           <a href="https://www.worldometers.info/about/" target="_blank" rel="noopener noreferrer">
-            About - Worldometers
+            About
           </a>
         </li>
         <li>
           <a href="https://www.worldometers.info/contact/" target="_blank" rel="noopener noreferrer">
-            Contact - Worldometers
+            Contact
           </a>
         </li>
         <li>
           <a href="https://www.worldometers.info/languages/" target="_blank" rel="noopener noreferrer">
-            Languages - Worldometers
+            Languages
           </a>
         </li>
         <li>
           <a href="https://www.worldometers.info/faq/" target="_blank" rel="noopener noreferrer">
-            FAQ - Worldometers
+            FAQ
           </a>
         </li>
         <li className="group-heading">Sort Flags By:</li>
