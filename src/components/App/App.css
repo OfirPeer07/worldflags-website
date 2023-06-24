@@ -1,8 +1,7 @@
-body {
-  background: black url(../../images/backgrounds/background.jpg);
-  animation: stars 180s linear alternate;
-  background-size: fixed;
-  position: sticky;
+#stars-background  {
+  background: black url(../../images/backgrounds/stars.jpg);
+  animation: stars 240s linear 0s infinite;
+  background-size: 150%;
   overflow: hidden;
 }
 
@@ -22,8 +21,28 @@ body {
   background-attachment: fixed;
   border: 1px solid #000000;
   border-radius: 100%;
-  width: 650px;
-  height: 650px;
+  width: 40.625rem;
+  height: 40.625rem;
+  cursor: pointer;
+  animation: movimiento 120s linear infinite;
+  margin: 6em auto;
+  transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  position: sticky;
+  overflow: hidden;
+  box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset,
+    2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset,
+    25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
+}
+
+#earth:hover {
+  background: url(../../images/backgrounds/earth_night.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border: 1px solid #000000;
+  border-radius: 100%;
+  width: 40.625rem;
+  height: 40.625rem;
   cursor: pointer;
   animation: movimiento 120s linear infinite;
   margin: 6em auto;
@@ -41,19 +60,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 645px;
-  height: 645px;
+  width: 40.3125rem;
+  height: 40.3125rem;
   border: 5px solid #00ff56;
   border-radius: 100%;
   animation: loading 120s linear infinite;
 }
 
-@keyframes orbit {
+@keyframes movimiento {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateY(-200px) rotate(0deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateY(-200px) rotate(-360deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -151,18 +170,9 @@ body {
   }
 }
 
-@keyframes movimiento {
-  from {
-    transform: rotateZ(6deg);
-  }
-  to {
-    transform: rotateZ(366deg);
-  }
-}
-
 .jt {
-  position: absolute;
-  font-size: 65px;
+  position: fixed;
+  font-size: 4.0625rem;
   top: 75%;
   right: 30%;
   left: 30%;
@@ -172,9 +182,10 @@ body {
 }
 
 .jt:hover {
+  position: fixed;
   text-transform: uppercase;
-  font-size: 55px;
-  top: 77%;
+  font-size: 3.4375rem;
+  top: 78%;
   right: 30%;
   left: 30%;
 }
@@ -204,7 +215,8 @@ body {
 .jt__text {
   display: block;
   transform-origin: bottom left;
-  animation: moveIn 0.5ms 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+  animation: moveIn 15s 0s cubic-bezier(.36,0,.06,1) infinite alternate;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #000, 0 0 15px #15ff00, 0 0 50px #15ff00;
 }
 .jt__row:nth-child(1) .jt__text {
   transform: translateY(-0.1em);
@@ -226,17 +238,33 @@ body {
 }
 
 @keyframes moveIn {
-  50%, 100% { 
+  25%, 50%, 100%, 75%, 50%, 25%, 0% {
     transform: translateY(0em)
   }
-  0%   { 
-  opacity: 0; 
+
+  0%   {
+  opacity: 0;
   filter: blur(10px);
-  
+
   }
-  100% { 
-  opacity: 1; 
+  100% {
+  opacity: 1;
   filter: blur(0px);
+  }
+}
+
+.fallWord {
+  display: inline-block;
+  animation: leanUp 10s;
+  transform-origin: top center;
+}
+
+@keyframes leanUp {
+  0% {
+    transform: translateY(100px) skewY(15deg);
+  }
+  100% {
+    transform: translateY(0) skewY(0);
   }
 }
 
@@ -256,11 +284,4 @@ html, body {
   background: black;
   color: #17ca07;
   height: 100%;
-}
-
-body {
-  display: absolute;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }

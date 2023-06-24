@@ -8,9 +8,9 @@
 }
 
 body {
-  background: black url('../../images/backgrounds/background.jpg');
-  animation: stars 180s linear 0s infinite;
-  background-size: auto;
+  background: black url('../../images/backgrounds/stars.jpg');
+  animation: stars 240s linear 0s infinite;
+  background-size: 150%;
 }
 
 #moon {
@@ -19,8 +19,8 @@ body {
   border: 2px solid #000;
   border-radius: 50%;
   right: 45%;
-  width: 750px;
-  height: 750px;
+  width: 46.875rem;
+  height: 46.875rem;
   cursor: pointer;
   animation: movimiento 240s linear 0s infinite;
   margin: 6em auto;
@@ -39,6 +39,35 @@ body {
   }
 }
 
+#moon:hover {
+  background: url('../../images/backgrounds/sun.png');
+  background-size: cover;
+  border: 2px solid #000;
+  border-radius: 50%;
+  right: 45%;
+  width: 46.875rem;
+  height: 46.875rem;
+  cursor: pointer;
+  margin: 6em auto;
+  transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  position: relative;
+  overflow: hidden;
+  animation: sunAnimation 1200s linear infinite;
+  box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset, 2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset, 25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
+}
+
+@keyframes sunAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 @keyframes stars {
   0% {
     background-position: 0 0;
@@ -53,8 +82,8 @@ body {
   top: 100%;
   left: 45%;
   transform: translate(-100%, -100%);
-  width: 550px;
-  height: 550px;
+  width: 34.375rem;
+  height: 34.375rem;
   background-image: url('../../images/backgrounds/astronaut.png');
   background-size: cover;
   z-index: 9999;
@@ -62,7 +91,7 @@ body {
 }
 
 .text {
-  font-size: 65px;
+  font-size: 4.0625rem;
   font-family: "Wallpoet", cursive;
   color: #17ca07;
   position: fixed;
@@ -74,7 +103,7 @@ body {
 }
 
 ._404 {
-  font-size: 140px;
+  font-size: 8.75rem;
   font-weight: bold;
 }
 

@@ -10,19 +10,35 @@ function App() {
     <div className="app-container">
       <div id="earth" onClick={handleClick} className="xbox">
         <div class="xbox" data-char="O"></div>
-      </div>
-      <h1 class="jt --debug">
-        <span class="jt__row">
-          <span class="jt__text">Welcome To The World Flags Website</span>
+        </div>
+      <h1 className="jt --debug">
+        <span className="jt__row">
+          <span className="jt__text">
+            <span className="flickerProblem">Welcome</span> To The{' '}
+            <span className="flicker">World Flags</span>{' '}
+            <span className="fallWord">Website</span>
+          </span>
         </span>
-        <span class="jt__row jt__row--sibling" aria-hidden="true">
-          <span class="jt__text">Welcome To The World Flags Website</span>
+        <span className="jt__row jt__row--sibling" aria-hidden="true">
+          <span className="jt__text">
+            <span className="flickerProblem">Welcome</span> To The{' '}
+            <span className="flicker">World Flags</span>{' '}
+            <span className="fallWord">Website</span>
+          </span>
         </span>
-        <span class="jt__row jt__row--sibling" aria-hidden="true">
-          <span class="jt__text">Welcome To The World Flags Website</span>
+        <span className="jt__row jt__row--sibling" aria-hidden="true">
+          <span className="jt__text">
+            <span className="flickerProblem">Welcome</span> To The{' '}
+            <span className="flicker">World Flags</span>{' '}
+            <span className="fallWord">Website</span>
+          </span>
         </span>
-        <span class="jt__row jt__row--sibling" aria-hidden="true">
-           <span class="jt__text">Welcome To The World Flags Website</span>
+        <span className="jt__row jt__row--sibling" aria-hidden="true">
+          <span className="jt__text">
+            <span className="flickerProblem">Welcome</span> To The{' '}
+            <span className="flicker">World Flags</span>{' '}
+            <span className="fallWord">Website</span>
+          </span>
         </span>
       </h1>
     </div>
