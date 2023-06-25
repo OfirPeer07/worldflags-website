@@ -42,8 +42,16 @@ You can see the [versions](https://github.com/facebook/react/tags) and [learn Re
 ## Usage
 
 Upon launching the application, you will be greeted with a main page featuring an animated rotating Earth.  
-Hovering over the Earth reveals a night-view representation.  
-The main page also includes a title and a subtitle indicating the purpose of the website.
+
+![This is Earth image](https://i.ibb.co/z6HFrv3/149.png)
+
+Hovering over with your mouse the Earth reveals a night-view representation.  
+
+![This is Earth Night-View image](https://i.ibb.co/tMfK16S/150.png)
+
+Click on the Earth night-view will lead you to the main page.  
+
+![This is Main-Page image.](https://i.ibb.co/SXfg61L/152.png)
 
 ## Sort and Explore Country-Specific Information
 
@@ -68,6 +76,8 @@ The application provides additional links for easy access to specific informatio
 
 If you encounter a non-existent page or invalid link, you will be redirected to the PageNotFound page.  
 From there, you can click on the image of the Moon/Sun to return to the main page.
+
+![This is PageNotFound page image](https://i.ibb.co/T05WMkx/159.png)
 
 ## Technologies Used
 
