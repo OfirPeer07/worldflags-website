@@ -52,20 +52,8 @@ body {
   transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
   position: relative;
   overflow: hidden;
-  animation: sunAnimation 1200s linear infinite;
+  animation: movimiento 240s linear 0s infinite;
   box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset, 2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset, 25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
-}
-
-@keyframes sunAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
 }
 
 @keyframes stars {
