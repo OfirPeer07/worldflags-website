@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# WorldFlags Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WorldFlags is a web application that provides real-time information about countries around the world in a user-friendly manner. It allows users to access country-specific data through an interactive interface and provides direct links to the corresponding pages on the "Worldometer" website.  
+This README.md file provides an overview of the project and instructions on how to install and use the application.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Display of 235 flags representing different countries.
+- Clicking on a flag opens a new tab with detailed information about the corresponding country on the "Worldometer" website.
+- Sorting functionality to arrange flags alphabetically or based on population and land area.
+- Interactive SideNav for easy access to sorting options.
+- Additional links are available to access real-time global information, world population, Coronavirus, and more.
+- Responsive design for seamless viewing on various devices.
+- PageNotFound feature redirects users to a dedicated page when they try to access non-existent links.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the WorldFlags application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Ensure you have [Node.js](https://nodejs.org) installed on your system.
+2. Clone this repository to your local machine or download the source code as a ZIP file.
+3. Open a terminal or command prompt and navigate to the project's root directory.
+4. Run the following command to install the necessary dependencies:
 
-### `npm test`
+   ```bash
+   npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Once the dependencies are installed, start the application by running:
+   ```bash
+   npm start
+6. Open your web browser and visit http://localhost:3000 to access the WorldFlags application.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Upon launching the application, you will be greeted with a main page featuring an animated rotating Earth.  
+Hovering over the Earth reveals a night-view representation.  
+The main page also includes a title and a subtitle indicating the purpose of the website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Explore Country-Specific Information
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To explore country-specific information:
+1. Click on any flag displayed on the "worldflags" page.  
+This will open a new tab in your browser with detailed information about the corresponding country on the "Worldometer" website.
 
-### `npm run eject`
+### Sort Flags
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To sort flags:
+1. Use the SideNav on the left side of the site.
+2. Click on the "Population" or "Land Area" icons to sort flags based on the corresponding categories.
+3. Click on the default sort icon to revert to the default sorting order (alphabetical).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Additional Links
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application provides additional links for easy access to specific information:
+- **World information:** Real-time global information about all countries.
+- **World Population:** Real-time information on the world population.
+- **All People In 1 Page:** Displaying real-time all people on one page.
+- **Coronavirus:** Real-time informaion of the pandemic Coronavirus.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### PageNotFound
 
-## Learn More
+If you encounter a non-existent page or invalid link, you will be redirected to the PageNotFound page.  
+From there, you can click on the image of the Moon/Sun to return to the main page (App).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The WorldFlags web application is built using the following technologies:
+- **React:** A JavaScript library for building user interfaces.
+- **HTML:** The standard markup language for creating web pages.
+- **CSS:** A stylesheet language used for designing the application's appearance.
+- **JavaScript:** The programming language used for adding interactivity and functionality to the application.
 
-### Code Splitting
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- The flag images used in the application are sourced from the [WorldFlags](https://www.worldometers.info/geography/flags-of-the-world/) collection on Worldometers.
+- The country-specific information is retrieved from the [Worldometer](https://www.worldometers.info/) website.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
