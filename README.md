@@ -36,15 +36,13 @@ Upon launching the application, you will be greeted with a main page featuring a
 Hovering over the Earth reveals a night-view representation.  
 The main page also includes a title and a subtitle indicating the purpose of the website.
 
-### Explore Country-Specific Information
+## Sort and Explore Country-Specific Information
 
-To explore country-specific information:
-1. Click on any flag displayed on the "worldflags" page.  
-This will open a new tab in your browser with detailed information about the corresponding country on the "Worldometer" website.
+### Explore Country-Specific Information
+1. Search the country that you want to explore from any flags displayed on the `/worldflags` page.
+2. Click on the chosen flag to access detailed information about the corresponding country on the "Worldometer" website.
 
 ### Sort Flags
-
-To sort flags:
 1. Use the SideNav on the left side of the site.
 2. Click on the "Population" or "Land Area" icons to sort flags based on the corresponding categories.
 3. Click on the default sort icon to revert to the default sorting order (alphabetical).
