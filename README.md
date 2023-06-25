@@ -18,7 +18,7 @@ This README.md file provides an overview of the project and instructions on how 
 - Node.js (version 18.16.0): Make sure you have Node.js installed on your system.
   - You can download it from [nodejs.org](https://nodejs.org).
 - React (version 18.2.0): A JavaScript library for building user interfaces. 
-  - You can see the [versions](https://github.com/facebook/react/tags) and [learn how to use React](https://react.dev/learn).
+  - You can see the [versions](https://github.com/facebook/react/tags) and [Quick Start](https://react.dev/learn) of React.
 
 ### Installing Project
 1. Start by cloning this repository to your local machine or download the source code as a ZIP file:  
