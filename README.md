@@ -15,10 +15,10 @@ This README.md file provides an overview of the project and instructions on how 
 
 ## Installation and Prerequisites
 ### The following dependencies are required to run the WorldFlags application:
-- Node.js (version 18.16.0): Make sure you have Node.js installed on your system. 
-You can download it from [nodejs.org](https://nodejs.org).
-- React (version 18.2.0): A JavaScript library for building user interfaces.
-You can see the [versions](https://github.com/facebook/react/tags) and [learn React](https://react.dev/learn).
+- Node.js (version 18.16.0): Make sure you have Node.js installed on your system.
+  - You can download it from [nodejs.org](https://nodejs.org).
+- React (version 18.2.0): A JavaScript library for building user interfaces. 
+  - You can see the [versions](https://github.com/facebook/react/tags) and [learn how to use React](https://react.dev/learn).
 
 ### Installing Project
 1. Start by cloning this repository to your local machine or download the source code as a ZIP file:  
@@ -45,11 +45,11 @@ Upon launching the application, you will be greeted with a main page featuring a
 
 ![This is Earth image](https://i.ibb.co/z6HFrv3/149.png)
 
-Hovering over with your mouse the Earth reveals a night-view representation.  
+Hovering over with your mouse on the Earth reveals a night-view representation.  
 
 ![This is Earth Night-View image](https://i.ibb.co/tMfK16S/150.png)
 
-Click on the Earth night-view will lead you to the main page.  
+Clicking on the Earth night-view will lead you to the main page.  
 
 ![This is Main-Page image.](https://i.ibb.co/SXfg61L/152.png)
 
@@ -89,8 +89,8 @@ The WorldFlags web application is built using the following technologies:
 
 ## Credits
 
-- All links found on the WorldFlags website are retrieved from the [WorldFlags](https://www.worldometers.info/) website.
-- The country-specific information obtained by clicking on the country flags on the WorldFlags website is retrieved from the [WorldFlags](https://www.worldometers.info/) website.
+- All links found on the WorldFlags website are retrieved from the [Worldometers](https://www.worldometers.info/) website.
+- The country-specific information obtained by clicking on the country flags on the WorldFlags website is retrieved from the [Worldometers](https://www.worldometers.info/) website.
 
 ## License
 
