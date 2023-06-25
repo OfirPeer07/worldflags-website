@@ -13,23 +13,32 @@ This README.md file provides an overview of the project and instructions on how 
 - Responsive design for seamless viewing on various devices.
 - PageNotFound feature redirects users to a dedicated page when they try to access non-existent links.
 
-## Installation
+## Installation and Prerequisites
+### The following dependencies are required to run the WorldFlags application:
+- Node.js (version 18.16.0): Make sure you have Node.js installed on your system. 
+You can download it from [nodejs.org](https://nodejs.org).
+- React (version 18.2.0): A JavaScript library for building user interfaces.
+You can see the [versions](https://github.com/facebook/react/tags) and [learn React](https://react.dev/learn).
 
-To run the WorldFlags application locally, follow these steps:
-
-1. Ensure you have [Node.js](https://nodejs.org) installed on your system.
-2. Clone this repository to your local machine or download the source code as a ZIP file.
-3. Open a terminal or command prompt and navigate to the project's root directory.
-4. Run the following command to install the necessary dependencies:
+### Installing Project
+1. Start by cloning this repository to your local machine or download the source code as a ZIP file:  
 
    ```bash
-   npm install
+   https://github.com/OfirPeer07/info-countries-website.git
+2. Open a terminal or command prompt and navigate to the project's root directory:  
 
-5. Once the dependencies are installed, start the application by running:
+   ```bash
+   cd info-countries-website
+3. Run the following command to install the necessary dependencies:  
+
+   ```bash
+    npm install
+4. Once the dependencies are installed, start the application by running:  
+
    ```bash
    npm start
-6. Open your web browser and visit http://localhost:3000 to access the WorldFlags application.
-
+5. Open your web browser and visit http://localhost:3000 to access the WorldFlags application.
+> Note: Please ensure you have the correct versions of the dependencies mentioned above for seamless functionality.
 ## Usage
 
 Upon launching the application, you will be greeted with a main page featuring an animated rotating Earth.  
