@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 
 .app-container {
-  display: flex;
-  flex-direction: row;
-  background-size: cover;
-  background-attachment: fixed;
+  background: black url(../../images/backgrounds/stars.jpg);
+  animation: stars 240s linear 0s infinite;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+@keyframes stars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
 }
 
 .main-content {
@@ -92,8 +101,8 @@
   font-family: 'Wallpoet', sans-serif;
   color: #009CC3;
   letter-spacing: 1px;
-  text-shadow: 0 0 20px #fff;
-  animation: textAnimation 3s infinite;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #000, 0 0 15px #ff7300, 0 0 50px #ff7300;
+  animation: textAnimation 5s infinite;
 }
 
 @keyframes textAnimation {
@@ -108,7 +117,7 @@
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(25%);
     opacity: 0;
   }
 }

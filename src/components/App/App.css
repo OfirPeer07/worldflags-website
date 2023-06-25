@@ -1,6 +1,6 @@
 #stars-background  {
   background: black url(../../images/backgrounds/stars.jpg);
-  animation: stars 240s linear 0s infinite;
+  animation: stars 300s linear 0s infinite;
   background-size: 150%;
   overflow: hidden;
 }

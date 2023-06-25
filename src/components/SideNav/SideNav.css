@@ -6,7 +6,7 @@
   position: fixed;
   top: 0%;
   left: 0%;
-  background: #333;
+  background: none;
   padding-top: 20px;
   overflow-y: auto;
 }
