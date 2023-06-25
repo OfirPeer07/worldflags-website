@@ -75,4 +75,4 @@ The WorldFlags web application is built using the following technologies:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
