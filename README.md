@@ -53,12 +53,12 @@ The application provides additional links for easy access to specific informatio
 - **World information:** Real-time global information about all countries.
 - **World Population:** Real-time information on the world population.
 - **All People In 1 Page:** Displaying real-time all people on one page.
-- **Coronavirus:** Real-time informaion of the pandemic Coronavirus.
+- **Coronavirus:** Real-time information on the pandemic Coronavirus.
 
 ### PageNotFound
 
 If you encounter a non-existent page or invalid link, you will be redirected to the PageNotFound page.  
-From there, you can click on the image of the Moon/Sun to return to the main page (App).
+From there, you can click on the image of the Moon/Sun to return to the main page.
 
 ## Technologies Used
 
@@ -70,8 +70,8 @@ The WorldFlags web application is built using the following technologies:
 
 ## Credits
 
-- The flag images used in the application are sourced from the [WorldFlags](https://www.worldometers.info/geography/flags-of-the-world/) collection on Worldometers.
-- The country-specific information is retrieved from the [Worldometer](https://www.worldometers.info/) website.
+- All links found on the WorldFlags website are retrieved from the [WorldFlags](https://www.worldometers.info/) website.
+- The country-specific information obtained by clicking on the country flags on the WorldFlags website is retrieved from the [WorldFlags](https://www.worldometers.info/) website.
 
 ## License
 
