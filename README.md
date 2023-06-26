@@ -79,7 +79,6 @@ The application provides additional links for easy access to specific informatio
 If you encounter a non-existent page or invalid link, you will be redirected to the PageNotFound page.  
 From there, you can click on the image of the Moon/Sun to return to the main page.
 
-![This is PageNotFound page image](https://i.ibb.co/LdB9z3G/162.jpg)
 
 ## Technologies Used
 
