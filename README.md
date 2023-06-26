@@ -18,7 +18,8 @@ This README.md file provides an overview of the project and instructions on how 
 - Node.js (version 18.16.0): Make sure you have Node.js installed on your system.
   - You can download it from [nodejs.org](https://nodejs.org).
 - React (version 18.2.0): A JavaScript library for building user interfaces. 
-  - You can see the [versions](https://github.com/facebook/react/tags) and [Quick Start](https://react.dev/learn) of React.
+  - You can see the [Versions](https://github.com/facebook/react/tags) of React.
+  - You can explore the React [Quick Start](https://react.dev/learn).
 
 ### Installing Project
 1. Start by cloning this repository to your local machine or download the source code as a ZIP file:  
@@ -61,8 +62,9 @@ Clicking on the Earth night-view will lead you to the main page.
 
 ### Sort Flags
 1. Use the SideNav on the left side of the site.
-2. Click on the "Population" or "Land Area" icons to sort flags based on the corresponding categories.
+2. Click on the $\textcolor{white}{\textsf{"Population"}}$ or $\textcolor{white}{\textsf{"Land Area"}}$ icons to sort flags based on the corresponding categories.
 3. Click on the default sort icon to revert to the default sorting order (alphabetical).
+
 
 ### Additional Links
 
