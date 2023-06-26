@@ -25,7 +25,7 @@ This README.md file provides an overview of the project and instructions on how 
 1. Start by cloning this repository to your local machine or download the source code as a ZIP file:  
 
    ```bash
-   https://github.com/OfirPeer07/info-countries-website.git
+   https://github.com/OfirPeer07/worldflags-website.git
 2. Open a terminal or command prompt and navigate to the project's root directory:  
 
    ```bash
