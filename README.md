@@ -62,7 +62,7 @@ Clicking on the Earth night-view will lead you to the main page.
 
 ### Sort Flags
 1. Use the SideNav on the left side of the site.
-2. Click on the $\textcolor{white}{\textsf{"Population"}}$ or $\textcolor{white}{\textsf{"Land Area"}}$ icons to sort flags based on the corresponding categories.
+2. Click on the **"Population"** or **"Land Area"** icons to sort flags based on the corresponding categories.
 3. Click on the default sort icon to revert to the default sorting order (alphabetical).
 
 
