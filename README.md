@@ -44,15 +44,15 @@ This README.md file provides an overview of the project and instructions on how 
 
 Upon launching the application, you will be greeted with a main page featuring an animated rotating Earth.  
 
-![This is Earth image](https://i.ibb.co/z6HFrv3/149.png)
+![This is Earth image](https://i.ibb.co/0tfzDt4/Earth.jpg)
 
 Hovering over with your mouse on the Earth reveals a night-view representation.  
 
-![This is Earth Night-View image](https://i.ibb.co/tMfK16S/150.png)
+![This is Earth Night-View image](https://i.ibb.co/cJ88nW6/Earth-Night-View.jpg)
 
 Clicking on the Earth night-view will lead you to the main page.  
 
-![This is Main-Page image.](https://i.ibb.co/SXfg61L/152.png)
+![This is Main-Page image.](https://i.ibb.co/4Nz0d7R/World-Flags-Page.png)
 
 ## Sort and Explore Country-Specific Information
 
@@ -79,6 +79,7 @@ The application provides additional links for easy access to specific informatio
 If you encounter a non-existent page or invalid link, you will be redirected to the PageNotFound page.  
 From there, you can click on the image of the Moon/Sun to return to the main page.
 
+<img src="https://i.ibb.co/LdB9z3G/162.jpg" alt="PageNotFound image">
 
 ## Technologies Used
 
