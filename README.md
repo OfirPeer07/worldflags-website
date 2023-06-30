@@ -29,7 +29,7 @@ This README.md file provides an overview of the project and instructions on how 
 2. Open a terminal or command prompt and navigate to the project's root directory:  
 
    ```bash
-   cd info-countries-website
+   cd worldflags-website
 3. Run the following command to install the necessary dependencies:  
 
    ```bash
