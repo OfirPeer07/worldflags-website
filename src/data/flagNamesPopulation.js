@@ -1,7 +1,7 @@
 
 const flagNamesPopulation = [
-  'China',
   'India',
+  'China',
   'United_States',
   'Indonesia',
   'Pakistan',
