@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ofirpeer07.github.io/info-countries-website",
+  "homepage": "http://ofirpeer07.github.io/",
   "name": "info-countries-website",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "gh-pages": "^6.0.0",
+    "info-countries-website": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0",
